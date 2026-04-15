@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1940/1940308.png" type="image/x-icon">
+    <title>To Do List</title>
+</head>
+
+<body>
+    <div>
+        <section class="barra_menu">
+            <header>
+                <h2>Menu</h2>
+                <button type="button" onclick="abrir_menu">
+                    <img src="../img/menu.png" alt="">
+                </button>
+            </header>
+            <nav class="navegacao">
+                <ul>
+                    <li><a href="https://calendar.google.com/calendar/u/0/r" target="_blank"><img src="../img/Calendar.png" alt="">Calendário</a></li>
+                    <li class=""><a href="../pages/index.html"><img src="../img/Clipboard.png" alt="">Tarefas</a></li>
+                    <li><a href="https://calendar.google.com/calendar/u/0/r/settings" target="_blank"><img src="../img/Icon.png" alt="">Configurações</a></li>
+                </ul>
+            </nav>
+            <div>
+                <img src="../img/Generic avatar.png">
+                <span>Conta</span>
+            </div>
+
+        </section>
+    </div>
+   
+
+    <main>
+        <h1>To do List</h1>
+        <section>
+            <!-- Começo da página - Adicionar Tarefa -->
+            <div>
+                <h2>Nova tarefa</h2>
+                <form>
+                    <div>
+                        <label for="titulo">Título</label>
+                        <input type="text" id="" placeholder="Ex. Nome da tarefa">
+                    </div>
+                    <div>
+                        <label for="valor">Valor da hora</label>
+                        <input type="number" placeholder="Ex. 00.00">
+                    </div>
+                    <div>
+                        <label for="horas">Horas</label>
+                        <input type="number" placeholder="Ex.00">
+                    </div>
+                    <button type="button" onclick="adicionar">+ Adcionar tarefa</button>
+                </form>
+            </div>
+
+            <div>
+                <div>
+                    <h3>Horas acumuladas</h3>
+                    <h4></h4>
+                    <hr>
+                </div>
+                <div>
+                    <h3>Valor acumulado</h3>
+                    <h4></h4>
+                    <hr>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    
+</body>
+</html>
