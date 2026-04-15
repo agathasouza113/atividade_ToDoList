@@ -7,4 +7,39 @@
 body{
     font-family: "Montserrat", sans-serif;
     background-color: #F8FFF6;
+    box-sizing: border-box;
+}
+
+.principal_menu{
+    display: flex;
+    min-height: 100vh;
+}
+
+.barra_menu{
+    width: 260px;
+    background-color: #D9D9D9;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--roxo-principal);
+    margin-bottom: 40px; */
+}
+
+.cabecalho button{
+    background-color: transparent;
+    border: none;
+}
+
+.cabecalho button img{
+    width: 39px;
+    height: 41px;
 }
