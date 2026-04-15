@@ -33,22 +33,22 @@
     </div>
    
 
-    <main>
+    <main class="principal">
         <h1>To do List</h1>
-        <section>
-            <!-- Começo da página - Adicionar Tarefa -->
-            <div>
+        <!-- Começo da página - Adicionar Tarefa -->
+        <section class="nova_tarefa">
+            <div class="tarefas">
                 <h2>Nova tarefa</h2>
-                <form>
-                    <div>
+                <form id="tarefa_nova">
+                    <div class="titulo_tarefa">
                         <label for="titulo">Título</label>
                         <input type="text" id="" placeholder="Ex. Nome da tarefa">
                     </div>
-                    <div>
+                    <div class="valor_tarefa">
                         <label for="valor">Valor da hora</label>
                         <input type="number" placeholder="Ex. 00.00">
                     </div>
-                    <div>
+                    <div class="horas_tarefa">
                         <label for="horas">Horas</label>
                         <input type="number" placeholder="Ex.00">
                     </div>
@@ -56,20 +56,25 @@
                 </form>
             </div>
 
-            <div>
-                <div>
+            <div class="cartoes">
+                <div class="cartao_hora">
                     <h3>Horas acumuladas</h3>
-                    <h4></h4>
+                    <div class="hora_total"></div>
                     <hr>
                 </div>
-                <div>
+                <div class="cartao_valor">
                     <h3>Valor acumulado</h3>
-                    <h4></h4>
+                    <div class="valor_total"></div>
                     <hr>
                 </div>
             </div>
-
         </section>
+
+        <!-- Tarefas adicionadas -->
+        <section>
+            <h2>Tarefas</h2>
+        </section>
+
     </main>
     
 </body>
