@@ -107,3 +107,28 @@ body{
     font-weight: 500;
 }
 
+.principal{
+    flex: 1;
+    padding: 40px;
+}
+
+.principal h1{
+    font-size: 3rem;
+    color: #501345;
+    margin-bottom: 30px;
+}
+
+.nova_tarefa{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 30px;
+    background-color: #ebe9e9;
+    padding: 1.56rem;
+    border-radius: 10px;
+}
+
+.tarefas_gerais h2{
+    margin-bottom: 20px;
+    color: #501345;
+    font-size: 32px
+}
