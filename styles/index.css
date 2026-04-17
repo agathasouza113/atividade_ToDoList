@@ -27,11 +27,12 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--roxo-principal);
-    margin-bottom: 40px; */
+}
+
+.cabecalho h2{
+    color: #501345;
+    font-size: 36px;
+    font-weight: 700;
 }
 
 .cabecalho button{
@@ -42,4 +43,67 @@ body{
 .cabecalho button img{
     width: 39px;
     height: 41px;
+    cursor: pointer;
 }
+
+.cabecalho button img:hover{
+    opacity: 0.7;
+}
+
+.navegacao ul{
+    list-style: none;
+}
+
+.navegacao a{
+    text-decoration: none;
+    color: #474845;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navegacao a:hover{
+    color: #501345;
+    font-weight: 600;
+    transition: 0.3s;
+    border-right: 3px solid #501345;
+}
+
+.navegacao img{
+    width: 23px;
+    height: auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.navegacao img:hover{
+    opacity: 0.6;
+}
+
+.navegacao li{
+    padding: 10px 10px;
+    cursor: pointer;
+    color: #474845
+}
+
+.navegacao li:hover {
+    background: #d5d5d5;
+}
+
+.perfil{
+    margin-top: auto;
+    margin-left: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.perfil img{
+    width: 45px;
+    height: 45px;
+}
+
+.perfil span{
+    color: #501345;
+    font-weight: 500;
+}
+
