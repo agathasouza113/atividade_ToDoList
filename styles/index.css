@@ -132,3 +132,36 @@ body{
     color: #501345;
     font-size: 32px
 }
+
+.titulo_tarefa{
+    margin-bottom: 15px;
+}
+
+.titulo_tarefa label{
+    display: block;
+    font-size: 20px;
+    color: #501345;
+    margin-bottom: 4px;
+}
+
+.titulo_tarefa input{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+}
+
+.grupo_linha{
+    display: flex;
+    gap: 150px;
+}
+
+.adicionar_tarefa{
+    background-color: #501345;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 25px;
+}
