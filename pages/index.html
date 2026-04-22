@@ -32,7 +32,7 @@
         </section>
             <main class="principal">
             <h1>To do List</h1>
-            
+
             <!-- Começo da página - Adicionar Tarefa -->
             <section class="nova_tarefa">
                 <div class="tarefas_gerais">
@@ -78,11 +78,36 @@
             </section>
 
             <!-- Tarefas adicionadas -->
-            <section class="lista_tarefas">
+            <section class="lista_tarefa">
                 <h2>Tarefas</h2>
+
+                <article>
+                    <div class="coluna_tarefa">
+                        <h4>Tarefa</h4>
+                        <p>Nome da tarefa</p>
+                    </div>
+
+                    <div class="coluna_tarefa">
+                        <h4>Duração</h4>
+                        <p>Horas</p>
+                    </div>
+
+                    <div class="coluna_tarefa">
+                        <h4>Valor total</h4>
+                        <p>Reais</p>
+                    </div>
+
+                    <div class="acoes">
+                        <button type="button" class="editar_tarefa" onclick="editar" title="Editar">
+                            <img src="../img/edit.png" alt="Editar">
+                        </button>
+                        <button type="button" class="excluir_tarefa" onclick="exluir" title="Excluir">
+                            <img src="../img/delete.png" alt="Excluir">
+                        </button>
+                    </div>                    
+                </article>
             </section>
         </main>
-    </div>
-    
+    </div>    
 </body>
 </html>
