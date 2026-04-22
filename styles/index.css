@@ -72,11 +72,12 @@ body{
 .navegacao img{
     width: 23px;
     height: auto;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .navegacao img:hover{
-    opacity: 0.6;
+    opacity: 0.8;
+    filter: brightness(0) saturate(100%) invert(5%) sepia(65%) saturate(3743%) hue-rotate(295deg) brightness(94%) contrast(98%);
 }
 
 .navegacao li{
@@ -172,6 +173,12 @@ body{
     margin-top: 8.6%;
     padding-top: 8px;
     cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.adicionar_tarefa:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.33);
 }
 
 .cartao{
@@ -231,12 +238,32 @@ article{
     padding: 10px;
     border-radius: 10px;
     align-items: center;
+    margin-top: 1.5%;
+}
+ 
+h4{
+    color: #501345;
+}
+.coluna_tarefa{
+    font-size: 18px;
+}
+/* .coluna_tarefa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+.coluna_tarefa p{
+    color: #2e2f2d;
+
 }
 
 .acoes {
     display: flex;
     gap: 10px;
     align-items: center;
+    margin-right: 1rem
 }
 
 .editar_tarefa, .excluir_tarefa {
@@ -250,6 +277,7 @@ article{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s ease;
 }
 
 .editar_tarefa img, .excluir_tarefa img {
@@ -258,3 +286,10 @@ article{
     display: block;
     object-fit: contain;
 }
+
+.editar_tarefa:hover, .excluir_tarefa:hover {
+    transform: scale(1.1);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.33);
+}
+
+
