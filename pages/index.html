@@ -30,53 +30,56 @@
             </div>
 
         </section>
+            <main class="principal">
+            <h1>To do List</h1>
+            <!-- Começo da página - Adicionar Tarefa -->
+            <section class="nova_tarefa">
+                <div class="tarefas_gerais">
+                    <h2>Nova tarefa</h2>
+
+                    <form id="tarefa_form" class="formulario_tarefa">
+                        <div class="titulo_tarefa">
+                            <label for="titulo">Título</label>
+                            <input type="text" id="titulo" placeholder="Ex. Nome da tarefa">
+                        </div>
+
+                        <div class="grupo_linha">
+                            <div class="titulo_tarefa">
+                                <label for="valor">Valor da hora</label>
+                                <input type="number" id="valor" placeholder="Ex. 00.00">
+                            </div>
+                            <div class="titulo_tarefa">
+                                <label for="horas">Horas</label>
+                                <input type="number" id="horas" placeholder="Ex.00">
+                            </div>
+                        </div>
+                        <button type="button" class="adicionar_tarefa" onclick="adicionar">+ Adicionar tarefa</button>
+                    </form>
+                </div>
+
+                <!-- Cartões -->
+                <div class="cartoes">
+                    <div class="cartao hora">
+                        <h3>Hora acumulada</h3>
+                        <div class="resumo">Teste</div>
+                        <hr>
+                        
+                    </div>
+                    <div class="cartao valor">
+                        <h3>Valor acumulado</h3>
+                        <div class="resumo">Teste</div>
+                        <hr>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tarefas adicionadas -->
+            <section class="lista_tarefas">
+                <h2>Tarefas</h2>
+            </section>
+        </main>
     </div>
-   
-
-    <main class="principal">
-        <h1>To do List</h1>
-        <!-- Começo da página - Adicionar Tarefa -->
-        <section class="nova_tarefa">
-            <div class="tarefas_gerais">
-                <h2>Nova tarefa</h2>
-                <form id="tarefa_form">
-                    <div class="titulo_tarefa">
-                        <label for="titulo">Título</label>
-                        <input type="text" id="titulo" placeholder="Ex. Nome da tarefa">
-                    </div>
-                    <div class="grupo_linha">
-                        <div class="titulo_tarefa">
-                            <label for="valor">Valor da hora</label>
-                            <input type="number" id="valor" placeholder="Ex. 00.00">
-                        </div>
-                        <div class="titulo_tarefa">
-                            <label for="horas">Horas</label>
-                            <input type="number" id="horas" placeholder="Ex.00">
-                        </div>
-                    </div>
-                    <button type="button" class="adicionar_tarefa" onclick="adicionar">+ Adicionar tarefa</button>
-                </form>
-            </div>
-
-            <div class="cartoes">
-                <div class="cartao_hora">
-                    <h3>Horas acumuladas</h3>
-                    <div class="hora_total"></div>
-                    <hr>
-                </div>
-                <div class="cartao_valor">
-                    <h3>Valor acumulado</h3>
-                    <div class="valor_total"></div>
-                    <hr>
-                </div>
-            </div>
-        </section>
-
-        <!-- Tarefas adicionadas -->
-        <section>
-            <h2>Tarefas</h2>
-        </section>
-    </main>
     
 </body>
 </html>

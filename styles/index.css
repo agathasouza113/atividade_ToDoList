@@ -135,6 +135,7 @@ body{
 
 .titulo_tarefa{
     margin-bottom: 15px;
+    flex: 1;
 }
 
 .titulo_tarefa label{
@@ -153,8 +154,9 @@ body{
 }
 
 .grupo_linha{
-    display: flex;
-    gap: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
 }
 
 .adicionar_tarefa{
@@ -163,5 +165,54 @@ body{
     border: none;
     padding: 15px;
     border-radius: 10px;
-    font-size: 25px;
+    font-size: 20px;
+    cursor: pointer;
+    width: fit-content;
+    margin-top: 10px;
+}
+
+.cartao{
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.cartao h3{
+    font-weight: 300;
+}
+
+.hora{
+    background-color: #501345;
+    background-image: url(../img/Clock.png);
+    background-repeat: no-repeat;
+    background-position: 80%;
+}
+
+.valor{
+    background-color: #501345;
+    background-image: url(../img/Dollar\ sign.png);
+    background-repeat: no-repeat;
+    background-position: 80%;
+}
+
+.resumo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+hr{
+    border: 0;
+    background-color: white;
+    height: 2px;
+}
+
+.lista_tarefas h2{
+    font-size: 3rem;
+    color: #501345;
+    margin-top: 50px;
 }
