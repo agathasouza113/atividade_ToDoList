@@ -109,7 +109,7 @@ body{
 
 .principal{
     flex: 1;
-    padding: 40px;
+    padding: 20px;
 }
 
 .principal h1{
@@ -122,8 +122,8 @@ body{
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     gap: 30px;
-    background-color: #ebe9e9;
-    padding: 1.56rem;
+    background-color: #F1F8F2;
+    padding: 1.1rem;
     border-radius: 10px;
 }
 
@@ -146,7 +146,8 @@ body{
 }
 
 .titulo_tarefa input{
-    width: 100%;
+    width: 92%;
+    height: 24.4%;
     padding: 12px;
     border: none;
     border-radius: 10px;
@@ -160,15 +161,17 @@ body{
 }
 
 .adicionar_tarefa{
-    background-color: #501345;
+    width: 100%;
+    height: 50.5%;
     color: white;
+    padding: 10px;
     border: none;
-    padding: 15px;
     border-radius: 10px;
-    font-size: 20px;
+    background-color: #501345;
+    font-size: 25px;
+    margin-top: 8.9%;
+    padding-top: 8px;
     cursor: pointer;
-    width: fit-content;
-    margin-top: 10px;
 }
 
 .cartao{
