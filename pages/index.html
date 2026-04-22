@@ -55,7 +55,7 @@
                                 <label for="horas">Horas</label>
                                 <input type="number" id="horas" placeholder="Ex.00">
                             </div>
-                            <button type="button" class="adicionar_tarefa" onclick="adicionar">+ Adicionar tarefa</button>
+                            <button type="button" class="adicionar_tarefa" onclick="adicionar()">+ Adicionar tarefa</button>
                         </div>
                     </form>
                 </div>
@@ -64,13 +64,13 @@
                 <div class="cartoes">
                     <div class="cartao hora">
                         <h3>Hora acumulada</h3>
-                        <div class="resumo">Teste</div>
+                        <div class="resumo" id="horaAcumulada">Horas</div>
                         <hr>
                         
                     </div>
                     <div class="cartao valor">
                         <h3>Valor acumulado</h3>
-                        <div class="resumo">Teste</div>
+                        <div class="resumo" id="valorAcumulado">R$00.00</div>
                         <hr>
                         
                     </div>
@@ -81,33 +81,37 @@
             <section class="lista_tarefa" id="lista_tarefa">
                 <h2>Tarefas</h2>
 
-                <article>
+                <!-- Aqui está comentado porque ele vai ser exibido quando o botão for adicionado -->
+                <!-- <article>
                     <div class="coluna_tarefa">
                         <h4>Tarefa</h4>
-                        <p>Nome da tarefa</p>
                     </div>
 
                     <div class="coluna_tarefa">
                         <h4>Duração</h4>
-                        <p>Horas</p>
                     </div>
 
                     <div class="coluna_tarefa">
                         <h4>Valor total</h4>
-                        <p>Reais</p>
                     </div>
 
                     <div class="acoes">
-                        <button type="button" class="editar_tarefa" onclick="editar" title="Editar">
+                        <button type="button" class="editar_tarefa" onclick="editar()" title="Editar">
                             <img src="../img/edit.png" alt="Editar">
                         </button>
-                        <button type="button" class="excluir_tarefa" onclick="exluir" title="Excluir">
+                        <button type="button" class="excluir_tarefa" onclick="exluir()" title="Excluir">
                             <img src="../img/delete.png" alt="Excluir">
                         </button>
                     </div>                    
-                </article>
+                </article> -->
+                <div id="taskList">
+                    <!-- Aqui vai ser exibido as tarefas adicionadas -->
+                </div>
+                
             </section>
         </main>
     </div>    
+
+    <script src="../scripts/index.js"></script>
 </body>
 </html>
