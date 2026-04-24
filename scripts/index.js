@@ -2,6 +2,15 @@ let valorTotal = 0;
 let horaTotal = 0;
 let htmlTarefas ='';
 
+//Aqui é a função de abrir o menu e fechar
+function abrir_menu(){
+    const botaoAbrir = document.getElementById('abrir');
+    const barraMenu = document.querySelector('.barra_menu');
+
+    barraMenu.classList.toggle('aberto');
+}
+
+// Aqui é a função de adiconar a tarefa
 function adicionar(){
     const titulo = document.getElementById('titulo').value;
     const valorHora = document.getElementById('valor').value;
@@ -40,4 +49,9 @@ function adicionar(){
     `;
 
     document.getElementById('taskList').innerHTML = htmlTarefas;
+
+    // Aqui limpa os valores do formulário
+    document.getElementById('titulo').value = '';
+    document.getElementById('valor').value = '';
+    document.getElementById('horas').value = '';
 }

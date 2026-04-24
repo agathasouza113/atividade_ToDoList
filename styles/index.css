@@ -23,6 +23,20 @@ body{
     flex-direction: column;
 }
 
+.barra_menu {
+    transform: translateX(-79%);
+    transition: transform 0.4s ease;
+    position: fixed;
+    z-index: 1000;
+    height: 100vh;
+    left: 0;
+    top: 0;
+}
+
+.barra_menu.aberto {
+    transform: translateX(0);      
+}
+
 .cabecalho{
     display: flex;
     justify-content: space-between;
@@ -93,6 +107,10 @@ body{
 .perfil{
     margin-top: auto;
     margin-left: 18px;
+    position: sticky;     
+    bottom: 20px;         
+    background: #D9D9D9;  
+    padding: 15px;        
     display: flex;
     align-items: center;
     gap: 10px;
@@ -290,6 +308,15 @@ h4{
 .editar_tarefa:hover, .excluir_tarefa:hover {
     transform: scale(1.1);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.33);
+}
+
+.principal {
+    transition: margin-left 0.4s ease;
+    margin-left: 70px;  
+}
+
+.barra_menu.aberto ~ .principal {
+    margin-left: 295px; 
 }
 
 

@@ -9,12 +9,13 @@
 </head>
 
 <body>
+    <!-- Aqui é a aba do Menu -->
     <div class="principal_menu">
         <section class="barra_menu">
             <header class="cabecalho">
                 <h2>Menu</h2>
-                <button type="button" onclick="abrir_menu">
-                    <img src="../img/menu.png" alt="">
+                <button type="button" id="abrir" onclick="abrir_menu()">
+                    <img src="../img/menu.png" alt="Menu">
                 </button>
             </header>
             <nav class="navegacao">
@@ -60,7 +61,7 @@
                     </form>
                 </div>
 
-                <!-- Cartões -->
+                <!-- Cartões de hora e subtotal -->
                 <div class="cartoes">
                     <div class="cartao hora">
                         <h3>Hora acumulada</h3>
@@ -69,7 +70,7 @@
                         
                     </div>
                     <div class="cartao valor">
-                        <h3>Valor acumulado</h3>
+                        <h3>Valor final</h3>
                         <div class="resumo" id="valorAcumulado">R$00.00</div>
                         <hr>
                         
