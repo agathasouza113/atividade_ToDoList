@@ -41,7 +41,7 @@ function adicionar(){
             <button type="button" class="editar_tarefa" onclick="editar()" title="Editar">
                 <img src="../img/edit.png" alt="Editar">
             </button>
-            <button type="button" class="excluir_tarefa" onclick="exluir()" title="Excluir">
+            <button type="button" class="excluir_tarefa" onclick="exluir(this)" title="Excluir">
                 <img src="../img/delete.png" alt="Excluir">
             </button>
         </div>                    
@@ -50,8 +50,21 @@ function adicionar(){
 
     document.getElementById('taskList').innerHTML = htmlTarefas;
 
-    // Aqui limpa os valores do formulário
+    // Aqui limpa os valor pra escrever denovo
     document.getElementById('titulo').value = '';
     document.getElementById('valor').value = '';
     document.getElementById('horas').value = '';
+}
+
+//Aqui vai ser o botão excluir
+function exluir(botao) {
+    const article = botao.closest('article');
+    article.remove();
+
+    htmlTarefas = document.getElementById('taskList').innerHTML;
+
+    horaTotal = 0;
+    valorTotal = 0;
+    document.getElementById('horaAcumulada').innerText = '0H';
+    document.getElementById('valorAcumulado').innerText = 'R$ 0.00';
 }
