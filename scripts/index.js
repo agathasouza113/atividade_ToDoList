@@ -12,11 +12,20 @@ function abrir_menu(){
 
 // Aqui é a função de adiconar a tarefa
 function adicionar(){
+    const urgencia = document.getElementById('urgencia').value;
+
     const titulo = document.getElementById('titulo').value;
     const valorHora = document.getElementById('valor').value;
     const horas = document.getElementById ('horas').value;
 
-    const valorTask = valorHora * horas;
+    let valorTask = valorHora * horas; //Para ele variar o valor, ou seja, adicionar a urgência no valor total
+
+    if(urgencia === 'Média'){
+        valorTask = valorTask * 1.20;
+    } else if(urgencia === "Alta"){
+        valorTask = valorTask * 1.50;
+    }
+
     horaTotal += parseFloat(horas);
     valorTotal += valorTask;
     
@@ -54,6 +63,7 @@ function adicionar(){
     document.getElementById('titulo').value = '';
     document.getElementById('valor').value = '';
     document.getElementById('horas').value = '';
+    document.getElementById('urgencia').value = '';
 }
 
 //Aqui vai ser o botão excluir
