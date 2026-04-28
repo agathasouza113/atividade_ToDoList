@@ -131,6 +131,38 @@ body{
     padding: 20px;
 }
 
+.nivelUrgencia {
+    background-color: #F1F8F2; /* fundo claro */
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+}
+
+.nivelUrgencia p {
+    background-color: #501345; /* roxo escuro */
+    color: #fff;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.nivelUrgencia select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    background-color: #D9D9D9;
+    color: #501345;
+    font-size: 16px;
+    cursor: pointer;   
+}
+
+.nivelUrgencia select option {
+    background-color: #D9D9D9;
+    color: #501345;
+}
+
 .principal h1{
     font-size: 3rem;
     color: #501345;
