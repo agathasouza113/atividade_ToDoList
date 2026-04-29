@@ -66,7 +66,7 @@ function adicionar(){
     document.getElementById('urgencia').value = '';
 }
 
-//Aqui vai ser o botão excluir
+//Aqui vai ser o botão editar
 function editar(botao) {
     let nomeP = botao.closest('article').querySelector('.coluna_tarefa p');
     let novoNome = prompt('Novo nome:');
