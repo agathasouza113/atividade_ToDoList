@@ -369,70 +369,98 @@ h4{
 
 /* Tentativa de responsividade */
 @media (max-width: 768px) {
-    .barra_menu{ 
-        width: 80vw; 
-        transform: translateX(-100%); 
+
+    .principal_menu {
+        flex-direction: column;
     }
-    .barra_menu.aberto{ 
-        transform: translateX(0); 
+    
+    .barra_menu { 
+        width: 100vw; 
+        height: auto;
+        transform: translateY(-100%);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
     }
-    .principal{ 
-        margin-left: 70px; 
-        width: 100%; 
+    
+    .barra_menu.aberto { 
+        transform: translateY(0); 
     }
-    .barra_menu.aberto ~ .principal{ 
-        margin-left: 0; 
-        transform: translateX(80vw); 
+    
+    .principal { 
+        margin-left: 0 !important; /*O important serve para forçar ele ficar com essa margin*/
+        width: 100vw;
+        padding: 20px 15px;
+        margin-top: 0;
     }
-    .adicionar_tarefa{
-        font-size: 15px;
+    
+    .adicionar_tarefa{ 
+        font-size: 18px; 
     }
+
     .principal h1, .lista_tarefa h2, .tarefas_gerais h2{ 
-        font-size: 1.8rem; 
+        font-size: 2rem; 
     }
+
     .cabecalho h2{ 
-        font-size: 24px; 
+        font-size: 28px; 
     }
 }
 
 @media (max-width: 480px) {
-    .principal{ 
-        margin-left: 10px;
-        margin-right: 15px; 
-        padding: 10px; 
+    .principal { 
+        padding: 15px 10px; 
     }
-    .nova_tarefa{ 
+    
+    .nova_tarefa { 
+        grid-template-columns: 1fr; 
+        gap: 20px; 
+        padding: 20px 15px; 
+    }
+    
+    .grupo_linha { 
         grid-template-columns: 1fr; 
         gap: 15px; 
-        padding: 20px; 
     }
-    .grupo_linha{ 
-        grid-template-columns: 1fr; 
-        gap: 15px; 
-    }
-    .titulo_tarefa input{ 
-        width: 90%; 
+    
+    .titulo_tarefa input { 
+        width: 100%; 
         height: 50px; 
         font-size: 16px; 
-        padding: 15px; 
+        padding: 12px; 
+        box-sizing: border-box;
     }
-    .adicionar_tarefa{ 
+    
+    .adicionar_tarefa { 
         width: 100%; 
         height: 55px; 
-        font-size: 10px; 
-        margin-top: 15px; 
-        padding: 0; 
-        border-radius: 12px; 
+        font-size: 16px; 
+        margin-top: 10px; 
     }
-    .cartoes{ 
-        flex-direction: column; 
-        gap: 20px; 
-        margin: 20px 0; 
+    
+    .cartao{ 
+        padding: 20px 15px; 
     }
-    .resumo{ 
-        font-size: 22px; 
+
+    .resumo { 
+        font-size: 24px; 
     }
-    article{ 
-        flex-direction: column;
+    
+    article { 
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 15px;
+    }
+    
+    .coluna_tarefa { 
+        flex: 1 1 45%; 
+        min-width: 120px;
+    }
+    
+    .acoes { 
+        flex: 1 1 100%; 
+        justify-content: flex-end;
     }
 }
