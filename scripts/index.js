@@ -47,7 +47,7 @@ function adicionar(){
             <p>R$ ${valorTask.toFixed(2)}</p>
         </div>
         <div class="acoes">
-            <button type="button" class="editar_tarefa" onclick="editar()" title="Editar">
+            <button type="button" class="editar_tarefa" onclick="editar(this)" title="Editar">
                 <img src="../img/edit.png" alt="Editar">
             </button>
             <button type="button" class="excluir_tarefa" onclick="exluir(this)" title="Excluir">
@@ -67,14 +67,29 @@ function adicionar(){
 }
 
 //Aqui vai ser o botão excluir
+function editar(botao) {
+    let nomeP = botao.closest('article').querySelector('.coluna_tarefa p');
+    let novoNome = prompt('Novo nome:');
+    if (novoNome) {
+        nomeP.textContent = novoNome;
+    }
+}
+
+//Aqui vai ser o botão excluir
 function exluir(botao) {
     const article = botao.closest('article');
+    
+    // Pega todos os <p> do meu html para achar onde está o <p> das horas e do valor
+    let pegarP = article.querySelectorAll('p');
+    let horas = Number(pegarP[1].textContent.replace('h', '')); 
+    let valor = Number(pegarP[2].textContent.replace('R$ ', ''));
+    
+    horaTotal -= horas;
+    valorTotal -= valor;
+    //Aqui ele tira o que eu deletei e pega o que ja tem na tela e adiciona o novo, pra não ter erro de substituição
     article.remove();
-
     htmlTarefas = document.getElementById('taskList').innerHTML;
 
-    horaTotal = 0;
-    valorTotal = 0;
-    document.getElementById('horaAcumulada').innerText = '0H';
-    document.getElementById('valorAcumulado').innerText = 'R$ 0.00';
+    document.getElementById('horaAcumulada').innerText = horaTotal + 'H';
+    document.getElementById('valorAcumulado').innerText = 'R$ ' + valorTotal.toFixed(2);
 }
