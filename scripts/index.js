@@ -69,7 +69,7 @@ function adicionar(){
 //Aqui vai ser o botão editar
 function editar(botao) {
     let nomeP = botao.closest('article').querySelector('.coluna_tarefa p');
-    let novoNome = prompt('Novo nome:');
+    let novoNome = prompt('Adicione o novo nome da tarefa:');
     if (novoNome) {
         nomeP.textContent = novoNome;
     }
