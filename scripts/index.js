@@ -48,10 +48,10 @@ function adicionar(){
         </div>
         <div class="acoes">
             <button type="button" class="editar_tarefa" onclick="editar(this)" title="Editar">
-                <img src="../img/edit.png" alt="Editar">
+                <img src="img/edit.png" alt="Editar">
             </button>
             <button type="button" class="excluir_tarefa" onclick="exluir(this)" title="Excluir">
-                <img src="../img/delete.png" alt="Excluir">
+                <img src="img/delete.png" alt="Excluir">
             </button>
         </div>                    
     </article>
